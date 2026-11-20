@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title> HTML LISTS </title>
+	<body>
+		<!-- inline -->
+		<p style="color:red;"> this should be in red </p>
+		<!-- internal -->
+		<style>
+  			p{
+    					color: blue;
+    					font-size: 18px;
+  			}
+		</style>
+<!-- external -->
+<link rel="stylesheet" href="style.css">
+<p>Hello!</p>
+<p>Hello!</p>
+
+	</body>
+</head>
+</html>

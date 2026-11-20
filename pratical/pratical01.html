@@ -1,0 +1,201 @@
+```````````
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="University Student Activity Management Portal">
+    <meta name="author" content="Student">
+
+    <title>University Student Activity Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>University Student Activity Portal</h1>
+        <p>Explore Events, Participate and Learn!</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#activities">Activities</a></li>
+            <li><a href="#registration">Registration</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Home Section -->
+        <section id="home">
+            <h2>Welcome to Our University</h2>
+            <p>
+                Discover upcoming university events,
+                participate in activities and improve
+                your skills through student programs.
+            </p>
+        </section>
+
+        <!-- Events Section -->
+        <section id="events">
+            <h2>Upcoming Events</h2>
+
+            <article>
+                <h3>Technical Symposium</h3>
+                <p>
+                    Participate in technical competitions,
+                    coding challenges and workshops.
+                </p>
+                <p><strong>Date:</strong> 25 November 2026</p>
+            </article>
+
+            <article>
+                <h3>Cultural Fest</h3>
+                <p>
+                    Enjoy music, dance, art and cultural
+                    performances.
+                </p>
+                <p><strong>Date:</strong> 28 November 2026</p>
+            </article>
+        </section>
+
+        <!-- Activities Section -->
+        <section id="activities">
+            <h2>University Activities</h2>
+
+            <article>
+                <h3>Sports Activities</h3>
+                <p>Participate in indoor and outdoor sports.</p>
+            </article>
+
+            <article>
+                <h3>Technical Activities</h3>
+                <p>Join coding competitions and technical workshops.</p>
+            </article>
+        </section>
+
+        <!-- Aside -->
+        <aside>
+            <h2>Important Notice</h2>
+            <p>Students are encouraged to register for upcoming events.</p>
+        </aside>
+
+        <!-- Registration Form -->
+        <section id="registration">
+
+            <h2>Student Registration Form</h2>
+
+            <form action="#" method="post">
+
+                <!-- Text Fields -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name"
+                        placeholder="Enter your name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"
+                        placeholder="Enter your email" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone"
+                        placeholder="Enter phone number" required>
+
+                    <label for="roll">Roll Number:</label>
+                    <input type="text" id="roll" name="roll"
+                        placeholder="Enter roll number" required>
+
+                </fieldset>
+
+                <!-- Dropdown -->
+                <fieldset>
+                    <legend>Department Details</legend>
+
+                    <label for="department">Select Department:</label>
+
+                    <select id="department" name="department" required>
+                        <option value="">Choose Department</option>
+                        <option value="cse">Computer Science</option>
+                        <option value="ece">Electronics</option>
+                        <option value="eee">Electrical</option>
+                        <option value="mech">Mechanical</option>
+                    </select>
+
+                </fieldset>
+
+                <!-- Radio Buttons -->
+                <fieldset>
+                    <legend>Year of Study</legend>
+
+                    <input type="radio" id="first" name="year" value="1" required>
+                    <label for="first">First Year</label>
+
+                    <input type="radio" id="second" name="year" value="2">
+                    <label for="second">Second Year</label>
+
+                    <input type="radio" id="third" name="year" value="3">
+                    <label for="third">Third Year</label>
+
+                    <input type="radio" id="fourth" name="year" value="4">
+                    <label for="fourth">Fourth Year</label>
+
+                </fieldset>
+
+                <!-- Checkboxes -->
+                <fieldset>
+                    <legend>Select Your Interests</legend>
+
+                    <input type="checkbox" id="sports" name="interests" value="sports">
+                    <label for="sports">Sports</label>
+
+                    <input type="checkbox" id="coding" name="interests" value="coding">
+                    <label for="coding">Coding</label>
+
+                    <input type="checkbox" id="music" name="interests" value="music">
+                    <label for="music">Music</label>
+
+                    <input type="checkbox" id="dance" name="interests" value="dance">
+                    <label for="dance">Dance</label>
+
+                </fieldset>
+
+                <!-- Textarea -->
+                <fieldset>
+                    <legend>Additional Information</legend>
+
+                    <label for="message">Why do you want to participate?</label>
+
+                    <textarea id="message" name="message"
+                        rows="5"
+                        placeholder="Enter your message here"></textarea>
+
+                </fieldset>
+
+                <!-- Submit Button -->
+                <button type="submit">Register Now</button>
+                <button type="reset">Reset</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 University Student Activity Portal.</p>
+        <p>All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NETRA Dashboard</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f4f9;
+        }
+
+        header {
+            background: #101f35;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 4%;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .icon {
+            background: #287ee8;
+            padding: 15px 20px;
+            border-radius: 12px;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .brand {
+            font-size: 30px;
+            color: #3989e8;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: #cbd5e1;
+            text-decoration: none;
+        }
+
+        .online {
+            color: #34d399;
+        }
+
+        button {
+            background: #287ee8;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        main {
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <div class="icon">N</div>
+        <div>
+            <div class="brand">NETRA</div>
+            <small>ROBOT MISSION CONTROL</small>
+        </div>
+    </div>
+
+    <nav>
+        <a href="#">Dashboard</a>
+        <a href="#">Fleet</a>
+        <a href="#">Telemetry</a>
+        <a href="#">Alerts</a>
+    </nav>
+
+    <div class="online">
+        ● SYSTEM ONLINE
+    </div>
+
+    <div id="clock"></div>
+
+    <button onclick="dispatchMission()">
+        + Dispatch Mission
+    </button>
+</header>
+
+<main>
+    <h1>Welcome to NETRA</h1>
+    <p>Robot Mission Control Dashboard</p>
+</main>
+
+<script>
+    function updateClock() {
+        document.getElementById("clock")
+        .innerText = new Date().toLocaleTimeString();
+    }
+
+    setInterval(updateClock, 1000);
+    updateClock();
+
+    function dispatchMission() {
+        alert("New Mission Dispatched!");
+    }
+</script>
+
+</body>
+</html>
